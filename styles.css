@@ -1,5 +1,4 @@
 // https://i.imgur.com/ymA9VbE.png is bgh
-
 BODY, TABLE, INPUT, SELECT, TEXTAREA {
     font-family: verdana, arial, helvetica, sans-serif;
     font-size: 12px;
@@ -236,7 +235,7 @@ A:hover {
 
 .-container {
     position: relative;
-    width: 980px;
+    /*width: 980px;*/
     height: 64px;
 }
 
@@ -255,7 +254,6 @@ A:hover {
     height: 64px;
     background: #204060 url("https://i.imgur.com/csLKK4Z.png") no-repeat 0 -128px
 }
-
 
 .-logo A:hover {
     background-position: 0 -192px;
@@ -517,8 +515,9 @@ INPUT.s-input {
     background: #fff url("https://i.imgur.com/ymA9VbE.png") 0 0 repeat-y
 }
 
-.content {
-    width: 980px
+#content {
+    width: 980px;
+    height: 100vh;
 }
 
 #I_minheight {
@@ -540,7 +539,7 @@ INPUT.s-input {
     font-size: 10px
 }
 
-.sidebar {
+#left-sidebar {
     float: left;
     margin-left: 4px;
     width: 234px;
@@ -550,6 +549,13 @@ INPUT.s-input {
 }
 
 #I_nav .sect {
+    margin-top: 10px;
+    border-left: 1px solid #102030;
+    border-right: 1px solid #102030;
+    background-color: #f0f4f8
+}
+
+.left-sidebar--sticky-container {
     margin-top: 10px;
     border-left: 1px solid #102030;
     border-right: 1px solid #102030;
@@ -597,15 +603,16 @@ INPUT.s-input {
     text-decoration: none
 }
 
-#I_nav UL {
+#left-sidebar ol {
     text-align: left;
     font-family: tahoma, geneva, sans-serif;
     font-size: 11px;
     line-height: 14px;
-    list-style-type: none
+    list-style-type: none;
+    padding-left: 0;
 }
 
-#I_nav LI {
+#left-sidebar LI {
     display: block;
     text-indent: 2px;
     line-height: 16px;
@@ -721,8 +728,7 @@ INPUT.s-input {
     background-position: -80px -96px
 }
 
-* html .C_Collapsable .mid, * html .C_Collapsable .last, * html .C_Collapsable .pl,
-* html .C_Collapsable .mn {
+* html .C_Collapsable .mid, * html .C_Collapsable .last, * html .C_Collapsable .pl, * html .C_Collapsable .mn {
     display: inline
 }
 
@@ -784,13 +790,6 @@ INPUT.s-input {
     background: #d7d7d7
 }
 
-#footer {
-    width: 980px;
-    padding-bottom: 10px;
-    text-align: center;
-    font-size: 9px
-}
-
 TABLE.boxed {
     border-collapse: collapse
 }
@@ -813,6 +812,14 @@ TABLE.boxed TD {
     height: 30px;
     font-size: 21px;
     border-bottom: 2px solid #204080
+}
+
+#question-header H1 {
+    margin: 0;
+    height: 30px;
+    font-size: 21px;
+    border-bottom: 2px solid #204080;
+    width: calc(100vw - 252px);
 }
 
 .C_doc H1 .namespace {
@@ -1433,11 +1440,9 @@ pre {
     vertical-align: top;
     font-style: normal;
     width: 50%;
-    word-break: break-word;
-    // var color: #0000b0;
+    word-break: break-word; // var color: #0000b0;
     // dfn color: #500070;
     // cite color: #007000;
-    
 }
 
 .votecell {
@@ -1449,8 +1454,11 @@ pre {
 }
 
 .left-sidebar {
-    //display: none;
     display: block;
+}
+
+.aside-cta {
+    display: none;
 }
 
 #sidebar {
@@ -1482,6 +1490,10 @@ pre {
 }
 
 #post-form {
+    display: none;
+}
+
+.everyonelovesstackoverflow {
     display: none;
 }
 
@@ -2044,4 +2056,6 @@ table.boxed.containers td.none {
     -o-transition: all .5s ease;
     -webkit-transition: all .5s;
     transition: all .5s
-}-
+}
+
+-
