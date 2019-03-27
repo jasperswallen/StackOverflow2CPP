@@ -9,8 +9,13 @@ BODY, FORM, PRE, DIV {
     margin: 0
 }
 
+html {
+    height: 100%;
+}
+
 BODY {
-    background: #d7d7d7
+    background: #d7d7d7;
+    height: -webkit-fill-available;
 }
 
 IMG {
@@ -223,6 +228,8 @@ A:hover {
     color: #fff;
     background: #204060 url("https://i.imgur.com/0Qoo3t5.png") repeat-x 0 0
 }
+
+
 
 .top-bar A:link, #I_top A:visited, #I_top A:active {
     text-decoration: none;
@@ -512,12 +519,13 @@ INPUT.s-input {
 
 .container {
     color: #000;
+    height: inherit;/*-webkit-fill-available;*/
     background: #fff url("https://i.imgur.com/ymA9VbE.png") 0 0 repeat-y
 }
 
 #content {
     width: 980px;
-    height: 100vh;
+    height: inherit;/*-webkit-fill-available;*/
 }
 
 #I_minheight {
@@ -751,7 +759,8 @@ INPUT.s-input {
     float: right;
     width: 728px;
     vertical-align: top;
-    background-color: #fff
+    background-color: #fff;
+    height: inherit;
 }
 
 #I_content {
@@ -819,7 +828,8 @@ TABLE.boxed TD {
     height: 30px;
     font-size: 21px;
     border-bottom: 2px solid #204080;
-    width: calc(100vw - 252px);
+    /*width: calc(100vw - 252px);*/
+    width: auto;
 }
 
 .C_doc H1 .namespace {
