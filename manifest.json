@@ -1,7 +1,7 @@
 {
-    "name": "StackOverflow to CPlusPlus.net",
+    "name": "StackOverflow to CPlusPlus.com",
     "version": "1.0",
-    "description": "Changes the look of StackOverflow questions to CPP.net",
+    "description": "Changes the look of StackOverflow questions to CPlusPlus.com",
     "manifest_version": 2,
     "content_scripts": [
         {
