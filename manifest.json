@@ -21,6 +21,7 @@
     "permissions": [
         "webRequest",
         "webRequestBlocking",
-        "*://*/*"
+        "*://stackoverflow.com/*",
+        "*://cdn.sstatic.net/*"
     ]
 }
