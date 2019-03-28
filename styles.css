@@ -237,9 +237,7 @@ A:hover {
     background: #204060 url("https://i.imgur.com/0Qoo3t5.png") repeat-x 0 0
 }
 
-
-
-.top-bar A:link, #I_top A:visited, #I_top A:active {
+.top-bar A:link {
     text-decoration: none;
     color: #fff
 }
@@ -288,7 +286,7 @@ A:hover {
 #search DIV::before {
     white-space: nowrap;
     content: "Search:";
-    font-family: verdana,arial,helvetica,sans-serif;
+    font-family: verdana, arial, helvetica, sans-serif;
     font-size: 12px;
 }
 
@@ -389,92 +387,11 @@ A#I_btnlogout {
     background: #402030 url("https://i.imgur.com/csLKK4Z.png") no-repeat -164px -256px
 }
 
-#I_fold {
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 320px;
-    height: 80px;
-    border: 1px solid black;
-    color: #000;
-    background: #fff;
-    z-index: 1
-}
-
-#I_fold .deco {
-    float: left;
-    width: 16px;
-    height: 64px;
-    background: #fff url("https://i.imgur.com/csLKK4Z.png") no-repeat 0 -282px
-}
-
-#I_fold .fields {
-    float: left;
-    text-align: right;
-    font-family: tahoma, geneva, sans-serif;
-    font-size: 11px;
-    line-height: 20px
-}
-
-#I_fold .forgot {
-    font-size: 10px;
-    line-height: 16px
-}
-
-#I_fold INPUT.txt {
-    height: 14px;
-    background-color: #c0d0e0;
-    font-size: 12px;
-    border: 1px inset
-}
-
 INPUT.s-input {
     height: 14px;
     background-color: #c0d0e0;
     font-size: 12px;
     border: 1px inset
-}
-
-#I_fold INPUT.chk {
-    vertical-align: middle
-}
-
-#I_fold INPUT.btn {
-    margin: 0
-}
-
-#I_fold .openid {
-    float: right;
-    width: 125px;
-    border-left: 1px solid #e0e0e0;
-    padding-left: 3px;
-    padding-right: 15px;
-    text-align: center
-}
-
-#I_fold .google {
-    display: block;
-    margin: 3px auto;
-    width: 64px;
-    height: 21px;
-    background: #fff url("https://i.imgur.com/csLKK4Z.png") no-repeat -16px -303px
-}
-
-#I_fold .yahoo {
-    display: block;
-    margin: 3px auto;
-    width: 64px;
-    height: 21px;
-    background: #fff url("https://i.imgur.com/csLKK4Z.png") no-repeat -16px -282px
-}
-
-#I_fold .close A {
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 16px;
-    height: 16px;
-    background: #fff url("https://i.imgur.com/csLKK4Z.png") no-repeat -16px -330px
 }
 
 #I_bar {
@@ -520,32 +437,13 @@ INPUT.s-input {
 
 .container {
     color: #000;
-    height: inherit;/*-webkit-fill-available;*/
+    height: inherit;
     background: #fff url("https://i.imgur.com/ymA9VbE.png") 0 0 repeat-y;
 }
 
 #content {
     width: 980px;
-    height: inherit;/*-webkit-fill-available;*/
-}
-
-#I_minheight {
-    float: right;
-    width: 1px;
-    height: 500px
-}
-
-#I_midclear {
-    clear: both
-}
-
-#I_nav {
-    float: left;
-    margin-left: 4px;
-    width: 234px;
-    vertical-align: top;
-    text-align: center;
-    font-size: 10px
+    height: inherit;
 }
 
 #left-sidebar {
@@ -557,59 +455,11 @@ INPUT.s-input {
     font-size: 10px;
 }
 
-#I_nav .sect {
-    margin-top: 10px;
-    border-left: 1px solid #102030;
-    border-right: 1px solid #102030;
-    background-color: #f0f4f8
-}
-
 .left-sidebar--sticky-container {
     margin-top: 10px;
     border-left: 1px solid #102030;
     border-right: 1px solid #102030;
     background-color: #f0f4f8
-}
-
-#I_nav .sect H3 {
-    position: relative;
-    top: -1px;
-    border-top: 1px solid #6080a0;
-    border-bottom: 1px solid #102030
-}
-
-#I_nav .sect UL {
-    position: relative;
-    top: 1px;
-    margin: 0;
-    padding-left: 0;
-    border-bottom: 1px solid #102030
-}
-
-#I_nav .sect UL UL {
-    top: 0;
-    border: 0
-}
-
-#I_nav .sect LI {
-    line-height: 16px
-}
-
-#I_nav H3 {
-    margin: 0;
-    height: 16px;
-    color: #fff;
-    background: #406080 url("https://i.imgur.com/0Qoo3t5.png") repeat-x 0 0;
-    font-size: 12px
-}
-
-#I_nav H3 A {
-    color: #fff
-}
-
-#I_nav H3 A:hover {
-    color: #ff0;
-    text-decoration: none
 }
 
 ::-webkit-input-placeholder {
@@ -668,25 +518,6 @@ nav {
     display: none;
 }
 
-#I_nav LI.folder {
-    font-weight: bold
-}
-
-#I_nav LI:hover {
-    overflow: visible
-}
-
-#I_nav LI A {
-    display: block
-}
-
-#I_nav LI A SPAN {
-    cursor: pointer;
-    display: inline-block;
-    padding-right: 2px;
-    background-color: #f0f4f8
-}
-
 #I_nav LI A:hover, #I_nav LI A:hover SPAN {
     background-color: #ffffc0;
     text-decoration: none
@@ -698,11 +529,6 @@ nav {
 
 #I_nav .selected A:hover, #I_nav .selected A:hover SPAN {
     background-color: #e8ec90
-}
-
-#I_nav LI .label {
-    float: right;
-    height: 0
 }
 
 #I_nav LI.cpp11 .label DIV {
@@ -727,13 +553,6 @@ nav {
     background-image: url("https://i.imgur.com/csLKK4Z.png");
     background-repeat: no-repeat;
     background-position: -32px -112px
-}
-
-#I_nav H4 {
-    margin: 0;
-    font-style: italic;
-    font-size: 11px;
-    font-weight: bold
 }
 
 * html #I_nav LI {
@@ -789,23 +608,12 @@ nav {
     display: block
 }
 
-#I_main {
-    float: right;
-    width: 728px;
-    vertical-align: top;
-    background-color: #fff
-}
-
 .inner-content {
     float: right;
     width: 728px;
     vertical-align: top;
     background-color: #fff;
     height: inherit;
-}
-
-#I_content {
-    margin: 10px 0
 }
 
 .XXXC_ad728 {
@@ -869,7 +677,6 @@ TABLE.boxed TD {
     height: 30px;
     font-size: 21px;
     border-bottom: 2px solid #204080;
-    /*width: calc(100vw - 252px);*/
     width: auto;
 }
 
