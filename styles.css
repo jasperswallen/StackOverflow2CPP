@@ -10,12 +10,16 @@ BODY, FORM, PRE, DIV {
 }
 
 html {
-    height: 100%;
+    height: -webkit-fill-available;
+    background: url(https://i.imgur.com/ymA9VbE.png) 0px 0px repeat-y rgb(255, 255, 255);
 }
 
 BODY {
     background: #d7d7d7;
-    height: -webkit-fill-available;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    height: inherit;
 }
 
 IMG {
@@ -25,6 +29,10 @@ IMG {
 A:link, A:visited, A:active {
     text-decoration: none;
     color: #000070
+}
+
+#custom-header {
+    display: none;
 }
 
 A:hover {
@@ -246,16 +254,11 @@ A:hover {
     height: 64px;
 }
 
-/*.-img_glyph {
-    background-image: url()
-}*/
-
-.-logo {
-    width: 245px;
-    height: 64px;
+._glyph {
+    display: none;
 }
 
-.-logo A {
+.-logo {
     display: block;
     width: 245px;
     height: 64px;
@@ -282,35 +285,33 @@ A:hover {
     width: 145px
 }
 
+#search DIV::before {
+    white-space: nowrap;
+    content: "Search:";
+    font-family: verdana,arial,helvetica,sans-serif;
+    font-size: 12px;
+}
+
 svg {
     display: none
 }
 
-#I_search INPUT.btn {
-    border: 1px outset;
-    font-size: 10px
-}
-
 button.s-btn__icon {
     border: 1px outset;
-    font-size: 10px
+    font-size: 10px;
+    padding: 1px 6px;
+    content: "Go";
 }
 
-#I_sponsor {
-    position: absolute;
-    left: 690px;
-    top: 0
+button.s-btn__icon::before {
+    content: "Go";
 }
 
-#I_sponsor A {
-    display: block;
-    width: 120px;
-    height: 40px;
-    background-image: url("http://www.cplusplus.com/v321/img/meetingcpp.png")
-}
-
-#I_sponsor A:hover {
-    background-position: -120px 0
+.js-search-submit {
+    height: 19px;
+    border: 1px inset;
+    padding-top: 0;
+    background-color: #b0c0d0;
 }
 
 #I_user {
@@ -510,7 +511,7 @@ INPUT.s-input {
     float: left;
     margin-right: 5px;
     padding: 0 5px;
-    background: #204060 url("https://i.imgur.com/0Qoo3t5.png") repeat-x 0 -70px
+    background: #204060 url("https://i.imgur.com/0Qoo3t5.png") repeat-x 0 -70px;
 }
 
 #I_bar LI.here {
@@ -520,7 +521,7 @@ INPUT.s-input {
 .container {
     color: #000;
     height: inherit;/*-webkit-fill-available;*/
-    background: #fff url("https://i.imgur.com/ymA9VbE.png") 0 0 repeat-y
+    background: #fff url("https://i.imgur.com/ymA9VbE.png") 0 0 repeat-y;
 }
 
 #content {
@@ -611,6 +612,10 @@ INPUT.s-input {
     text-decoration: none
 }
 
+::-webkit-input-placeholder {
+    color: transparent;
+}
+
 #left-sidebar ol {
     text-align: left;
     font-family: tahoma, geneva, sans-serif;
@@ -620,11 +625,47 @@ INPUT.s-input {
     padding-left: 0;
 }
 
+[class="pl8 js-gps-track nav-links--link"] {
+    margin: 0 !important;
+    padding: 0 !important;
+    height: 16px;
+    color: #fff !important;
+    background: #406080 url("https://i.imgur.com/0Qoo3t5.png") repeat-x 0 0;
+    font-size: 12px;
+    position: relative;
+    top: -1px;
+    border-top: 1px solid #6080a0;
+    border-bottom: 1px solid #102030;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    text-align: center;
+}
+
 #left-sidebar LI {
     display: block;
     text-indent: 2px;
     line-height: 16px;
-    overflow: hidden
+    overflow: hidden;
+    font-weight: bold;
+}
+
+nav {
+    position: relative;
+    margin: 0;
+    padding-left: 0;
+    border-bottom: 1px solid #102030;
+}
+
+.nav-links {
+    margin-bottom: 0 !important;
+}
+
+.create-team-tooltip {
+    display: none;
 }
 
 #I_nav LI.folder {
