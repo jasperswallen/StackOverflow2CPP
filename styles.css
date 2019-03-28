@@ -1,4 +1,3 @@
-// https://i.imgur.com/ymA9VbE.png is bgh
 BODY, TABLE, INPUT, SELECT, TEXTAREA {
     font-family: verdana, arial, helvetica, sans-serif;
     font-size: 12px;
@@ -1298,9 +1297,10 @@ pre {
     vertical-align: top;
     font-style: normal;
     width: 50%;
-    word-break: break-word; // var color: #0000b0;
-    // dfn color: #500070;
-    // cite color: #007000;
+    word-break: break-word; 
+    /* var color: #0000b0;
+    dfn color: #500070;
+    cite color: #007000;*/
 }
 
 .votecell {
@@ -1915,5 +1915,3 @@ table.boxed.containers td.none {
     -webkit-transition: all .5s;
     transition: all .5s
 }
-
--
